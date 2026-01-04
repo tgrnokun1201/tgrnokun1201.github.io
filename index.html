@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="Eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,0">
+        <title>RandomJoshu</title>
+        <meta property="og:url" content="https://tgrnokun1201.github.io/">
+        <meta property="og:image" content="/assets/favicon.png">
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+        <link rel="stylesheet" href="/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="#" id="homelink">Home</a>
+            &nbsp;&nbsp;
+            <a href="https://discord.gg/gaXkk47Jhq" target="_blank">Discord</a>
+            &nbsp;&nbsp;
+            <a href="https://youtube.com/channel/UCLuken1tR2L1ZnN3aub2dVQ/" target="_blank">YouTube</a>
+            &nbsp;&nbsp;
+            <a href="https://github.com/tgrnokun1201" target="_blank">GitHub</a>
+        </header>
+        <div id="home">
+            <div id="titlebar"></div>
+            <h1>Hi! I'm RandomJoshu</h1>
+            <h4>He/Him || 01 Dec || ENG/FIL</h4>
+
+            <div id="misc">
+                <a href="#" id="aboutmelink">
+                    <button>About Me</button>
+                </a>
+                <a href="#" id="othercontentlink">
+                    <button>Other Content</button>
+                </a>
+                <a href="https://serifsirf.github.io/" target="_blank">
+                    <button>Friend's Website</button>
+                </a>
+            </div>
+            <h5>RandomJoshu 2026</h5>
+        </div>
+
+        <div id="aboutme">
+            <div id="titlebar"></div>
+            <h1>About Me</h1>
+            <h5>He/Him || 01 Dec || ENG/FIL</h5>
+            <h5>
+                Hi, I'm Josh and I like to try and learn new things at my own pace.
+                My hobbies are playing Roblox, listening to music, and learning Japanese.
+            </h5>
+            <h5>
+                Favorite song artists: Ado, Joji, Rokudenashi, YOASOBI & Linkin Park
+            </h5>
+            <h5>&nbsp;</h5>
+        </div>
+
+        <div id="othercontent">
+            <div id="titlebar"></div>
+            <h2>Other Content</h2>
+            <a href="https://tgrnokun1201.github.io/oldsite/" target="_blank">
+                <h4>Old Version</h4>
+            </a>
+            <h5>dw there will be more ppl</h5>
+            <h5>&nbsp;&nbsp;</h5>
+        </div>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+
+            var homelink = document.getElementById("homelink");
+            var aboutmelink = document.getElementById("aboutmelink");
+            var othercontentlink = document.getElementById("othercontentlink");
+
+            $(document).ready(function(){
+                $('#home').show();
+                $('#aboutme').hide();
+                $('#othercontent').hide();
+            });
+
+            homelink.onclick = function() {
+                $('#home').show();
+                $('#aboutme').hide();
+                $('#othercontent').hide();
+            }
+
+            aboutmelink.onclick = function() {
+                $('#home').hide();
+                $('#aboutme').show();
+                $('#othercontent').hide();
+            }
+
+            othercontentlink.onclick = function() {
+                $('#home').hide();
+                $('#aboutme').hide();
+                $('#othercontent').show();
+            }
+
+
+
+        </script>
+    </body>
+</html>
