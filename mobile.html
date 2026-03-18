@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="Eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,0">
+        <title>RandomJoshu</title>
+        <meta property="og:url" content="https://tgrnokun1201.github.io/mobile">
+        <meta property="og:image" content="/assets/favicon.png">
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+        <link rel="stylesheet" href="/assets/style_mobile.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="home">
+            <h1>Hi! I'm RandomJoshu</h1>
+            <h2>He/Him || 01 Dec 2008 || ENG/FIL</h2>
+            <a href="https://youtube.com/channel/UCLuken1tR2L1ZnN3aub2dVQ">YouTube</a>
+            &nbsp;&nbsp;
+            <a href="https://discord.gg/gaXkk47Jhq">Discord</a>
+            &nbsp;&nbsp;
+            <a href="#" id="aboutmelink">About Me</a>
+        </div>
+
+        <div id="aboutme">
+            <h1>About Me</h1>
+            <h2></h2>
+            <a href="#" id="homelink">Return Home</a>
+        </div>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+
+            var homelink = document.getElementById("homelink");
+            var aboutmelink = document.getElementById("aboutmelink");
+
+            $(document).ready(function(){
+                $('#home').show();
+                $('#aboutme').hide();
+            });
+
+            homelink.onclick = function() {
+                $('#home').show();
+                $('#aboutme').hide();
+            }
+
+            aboutmelink.onclick = function() {
+                $('#home').hide();
+                $('#aboutme').show();
+            }
+
+
+
+        </script>
+    </body>
+</html>
