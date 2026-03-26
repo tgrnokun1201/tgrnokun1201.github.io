@@ -21,6 +21,8 @@
             <a href="https://discord.gg/gaXkk47Jhq">Discord</a>
             &nbsp;&nbsp;
             <a href="#" id="aboutmelink">About Me</a>
+            &nbsp;&nbsp;
+            <a href="#" id="othercontentlink">Misc</a>
         </div>
 
         <div id="aboutme">
@@ -34,9 +36,15 @@
             <h2>
                 Favorite anime series: Initial D
             </h2>
-            <a href="#" id="homelink">Return Home</a>
         </div>
-        
+
+        <div id="othercontent">
+            <h1>Other Content</h1>
+            <a href="https://tgrnokun1201.github.io/checkthelabel/">
+                <h2>Check the Label</h2>
+            </a>
+        </div>
+
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -44,30 +52,34 @@
 
             var homelink = document.getElementById("homelink");
             var aboutmelink = document.getElementById("aboutmelink");
+            var othercontentlink = document.getElementById("othercontentlink");
 
             $(document).ready(function(){
                 $('#home').show();
                 $('#aboutme').hide();
+                $('#othercontent').hide();
             });
 
             homelink.onclick = function() {
                 $('#home').show();
                 $('#aboutme').hide();
+                $('#othercontent').hide();
             }
 
             aboutmelink.onclick = function() {
                 $('#home').hide();
                 $('#aboutme').show();
+                $('#othercontent').hide();
+            }
+
+            othercontentlink.onclick = function() {
+                $('#home').hide();
+                $('#aboutme').hide();
+                $('#othercontent').show();
             }
 
 
 
-            if (/Windows|MacOS/i.test(navigator.userAgent)) {
-                window.location.href="https://tgrnokun1201.github.io/"
-            }
-
-
-            
         </script>
     </body>
 </html>
