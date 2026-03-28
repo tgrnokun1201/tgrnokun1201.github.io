@@ -1,10 +1,11 @@
 body {
-    background-image: url(/assets/github-page-bg.png);
+    background-image: url(github-bg-pc.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position-y: 5%;
     margin: 0px;
+    user-select: none;
 }
 
 header {
@@ -15,7 +16,8 @@ header {
     font-size: 15px;
     padding: 5px;
     text-align: right;
-    user-select: none;
+    position: sticky;
+    top: 0;
 }
 
 #home, #aboutme, #othercontent {
@@ -24,10 +26,11 @@ header {
     background: #f1f1f1;
     width: 50%;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 100px;
     text-align: center;
     user-select: none;
     display: block;
+    opacity: 90%;
     animation: mySlide;
     animation-duration: 1s;
     animation-timing-function: ease;
@@ -95,6 +98,6 @@ button {
 }
 
 @keyframes mySlide{
-    from{margin-top: 15%; opacity: 0%;}
-    to{margin-top: 10%; opacity: 100%;}
+    from{margin-top: 200px; opacity: 0%;}
+    to{margin-top: 100px; opacity: 90%;}
 }
